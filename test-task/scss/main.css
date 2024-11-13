@@ -1,0 +1,331 @@
+body {
+  margin: 0px;
+  background-color: #fafbff;
+  font-family: poppins;
+  display: flex;
+}
+
+.navBar {
+  margin-top: 11px;
+  margin-left: 14px;
+  position: relative;
+  width: 306px;
+  height: 150vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.navBar #close {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.navBar .logo {
+  display: flex;
+  margin-bottom: 34px;
+}
+.navBar .logo a {
+  text-decoration: none;
+  position: relative;
+}
+.navBar .logo a img {
+  margin-left: 28px;
+  margin-top: 20px;
+  width: 195px;
+  height: 39px;
+}
+.navBar .logo a span {
+  position: absolute;
+  right: -5px;
+  top: 40px;
+  color: #838383;
+  font-size: 10px;
+  margin-bottom: 40px;
+}
+.navBar .navList {
+  list-style: none;
+  margin-left: 39px;
+}
+.navBar .navList i {
+  margin-left: 60px;
+  padding-top: 15px;
+}
+.navBar .navList .active {
+  background-color: #5932ea;
+  border-radius: 8px;
+}
+.navBar .navList .active a {
+  color: #ffffff;
+}
+.navBar .navList .active i {
+  color: #ffffff;
+}
+.navBar .navList li {
+  display: flex;
+  position: relative;
+  width: 250px;
+  height: 46px;
+  margin-bottom: 20px;
+}
+.navBar .navList li img {
+  position: absolute;
+  left: 5px;
+  top: 8px;
+}
+.navBar .navList li a {
+  width: 120px;
+  padding-top: 10px;
+  padding-left: 14px;
+  margin-left: 30px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #9197b3;
+}
+.navBar .navList li i {
+  color: #9197b3;
+}
+.navBar .profile {
+  bottom: 30px;
+  position: absolute;
+  margin-left: 28px;
+  display: flex;
+}
+.navBar .profile .profile-desc {
+  margin-left: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.navBar .profile .profile-desc .name {
+  color: #000;
+  font-size: 14px;
+}
+.navBar .profile .profile-desc .position {
+  color: #757575;
+  font-size: 12px;
+}
+
+.user-workspace {
+  border-radius: 10px;
+  width: 100vh;
+  height: 80vh;
+  margin-left: 57px;
+  display: flex;
+  flex-direction: column;
+}
+.user-workspace .mobile {
+  display: none;
+}
+.user-workspace h2 {
+  font-size: 24px;
+  margin-bottom: 51px;
+}
+.user-workspace .workList {
+  width: 968px;
+  height: 812px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 38px;
+}
+.user-workspace .workList .listHead {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.user-workspace .workList .listHead .listDesc {
+  margin-bottom: 40px;
+}
+.user-workspace .workList .listHead .listDesc h3 {
+  margin: 0;
+  font-size: 23px;
+}
+.user-workspace .workList .listHead .listDesc span {
+  color: #16c098;
+  font-size: 14px;
+}
+.user-workspace .workList .listHead .listSearch {
+  justify-content: center;
+  margin-top: 10px;
+  padding-top: 13px;
+  background-color: #f9fbff;
+  width: 216px;
+  height: 38px;
+  border-radius: 10px;
+}
+.user-workspace .workList .listHead .listSearch i {
+  font-size: 15px;
+  padding-left: 5px;
+  color: #7e7e7e;
+}
+.user-workspace .workList .listHead .listSearch input {
+  outline: none;
+  border: none;
+  background-color: #f9fbff;
+}
+.user-workspace li {
+  list-style: none;
+}
+.user-workspace .clientsList {
+  display: flex;
+  flex-direction: row;
+}
+.user-workspace .clientsList .infoColumn {
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.user-workspace .clientsList .infoColumn .infoHeader {
+  color: #b5b7c0;
+  margin-bottom: 34px;
+}
+.user-workspace .clientsList .infoColumn li {
+  margin-bottom: 40px;
+}
+.user-workspace .clientsList .infoColumn .listActive {
+  background-color: rgba(22, 192, 152, 0.38);
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+  margin-bottom: 29px;
+  text-align: center;
+  border-radius: 4px;
+  border: 2px solid #00b087;
+  color: #008767;
+  width: 80px;
+}
+.user-workspace .clientsList .infoColumn .listInactive {
+  background-color: #ffc5c5;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+  margin-bottom: 29px;
+  text-align: center;
+  border-radius: 4px;
+  border: 2px solid #df0404;
+  color: #df0404;
+  width: 80px;
+}
+.user-workspace .listFooter {
+  display: flex;
+  margin-top: 12px;
+  justify-content: space-between;
+}
+.user-workspace .listFooter span {
+  color: #b5b7c0;
+  font-size: 14px;
+}
+.user-workspace .listFooter .listPagination button {
+  background-color: #f5f5f5;
+  color: #404b52;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  width: 25px;
+  height: 24px;
+  margin-left: 12px;
+  font-size: 12px;
+  transition: 0.3s ease-out;
+  font-weight: bold;
+}
+.user-workspace .listFooter .listPagination button:hover,
+.user-workspace .listFooter .listPagination button:active {
+  background-color: #5932ea;
+  color: #ffffff;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+.user-workspace .listFooter .listPagination span {
+  color: #404b52;
+  font-size: 12px;
+  margin-left: 12px;
+}
+
+@media only screen and (max-width: 667px) {
+  .navBar {
+    position: fixed;
+    left: -400px;
+    top: 0;
+    transition: 0.3s ease;
+  }
+  .navBar .logo a img {
+    margin-left: 10px;
+  }
+  .navBar #close:hover {
+    color: #5932ea;
+  }
+  .navBar #close {
+    font-size: 24px;
+    display: flex;
+    cursor: pointer;
+  }
+  #navbar.active {
+    left: 0px;
+    transition: 0.3s ease;
+  }
+  .user-workspace {
+    margin-left: 0;
+  }
+  .user-workspace .mobile:hover {
+    color: #5932ea;
+  }
+  .user-workspace .mobile {
+    cursor: pointer;
+    width: 21px;
+    display: flex;
+    margin: 20px;
+    font-size: 24px;
+  }
+  .user-workspace h2 {
+    margin-left: 20px;
+  }
+  .user-workspace .workList .listHead {
+    flex-direction: column;
+  }
+  .user-workspace .workList .listHead .listDesc {
+    margin-bottom: 0;
+  }
+  .user-workspace .clientsList .infoColumn {
+    margin-left: 10px;
+  }
+  .user-workspace .listFooter {
+    flex-direction: column;
+  }
+  .user-workspace .listFooter span {
+    margin-left: 15px;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 1024px) {
+  .navBar {
+    width: 25%;
+  }
+  .navBar .logo {
+    margin-left: -30px;
+  }
+  .navBar .navList {
+    margin-left: 8px;
+  }
+  .navBar .navList .active {
+    width: 95%;
+  }
+  .navBar .navList li i {
+    margin-left: 40px;
+  }
+  .user-workspace {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 799px) {
+  .navBar {
+    width: 27%;
+  }
+  .navBar .navList .active {
+    width: 95%;
+  }
+  .navBar .navList li i {
+    margin-left: -10px;
+  }
+}/*# sourceMappingURL=main.css.map */
